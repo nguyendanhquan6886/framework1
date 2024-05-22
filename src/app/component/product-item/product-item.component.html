@@ -1,0 +1,11 @@
+
+
+<button (click)="Onsubmit()">Add product</button>
+{{productnew | json }}
+<form (submit)="Onsubmit()" >
+  <input type="text" [(ngModel)]="productnew.name" name="name" placeholder="Name">
+  <input type="text" [(ngModel)]="productnew.price" name="price" placeholder="price">
+  <input type="text" [(ngModel)]="productnew.desscription" name="desscription" placeholder="desscription">
+  <input type="text" [(ngModel)]="productnew.image"name="image" placeholder="Image">
+  <button type="submit">Add product</button>
+</form>
